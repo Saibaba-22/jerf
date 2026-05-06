@@ -1,0 +1,154 @@
+/* General */
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: black; /* All text default black */
+}
+
+/* Header Layout */
+.header {
+  height: 33vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background: white;
+  margin-bottom: 40px; /* MORE GAP after header */
+}
+
+/* Left Side */
+.left {
+  max-width: 70%;
+}
+
+/* Right Side */
+.right {
+  max-width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Profile Image */
+.right img {
+  width: 170px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* ===== COMMON SECTION ===== */
+.section {
+    padding: 30px 40px;
+    font-size: 18px;
+    margin-bottom: 35px; /* MORE GAP between sections */
+}
+
+/* ===== HEADINGS ===== */
+.heading {
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px; /* LESS GAP with content */
+}
+
+/* ===== CONTENT TEXT ===== */
+.section p,
+.section li {
+    font-size: 18px;
+    color: black;
+    margin-top: 5px; /* LESS GAP under heading */
+}
+
+/* ===== TEXT STYLES ===== */
+.name {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+
+.designation {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 700; /* MADE BOLD */
+    color: black;
+}
+
+.quote {
+    font-family: Poppins;
+    font-size: 18px;
+    color: black;
+}
+
+
+/* ===== SKILLS ===== */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-box {
+    background: #e3f2fd;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px; /* SAME SIZE */
+    color: black;
+}
+
+/* ===== PROJECT ===== */
+.project-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.project-box:hover {
+    background-color: #f9f9f9;
+}
+
+.project-details {
+    display: none;
+    margin-top: 10px;
+}
+
+.project-box.active .project-details {
+    display: block;
+}
+
+.project-box img {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+/* ===== CERTIFICATION ===== */
+.cert-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.view-link {
+    color: blue;
+    margin-left: 10px;
+}
+
+.cert-image {
+    display: none;
+    margin-top: 20px;
+}
+
+.cert-box.active .cert-image {
+    display: block;
+}
+
+.cert-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
